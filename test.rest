@@ -1,0 +1,43 @@
+
+### POST USERS
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "username":"halaman",
+    "password":"63ec84f4ab9be5b8a8cb1ed3"
+}
+
+###Transaction Post
+
+POST http://localhost:8080/transactions
+Content-Type: application/json
+
+{
+    "walletid":"63ec84f4ab9be5b8a8cb1ed3",
+    "amount":"200",
+    "trans_type": "Cash",
+    "hashkey":"63ec84f4ab9be5b8a8cb1ed3" 
+}
+
+###Wallet Post
+
+POST http://localhost:8080/wallets
+Content-Type: application/json
+
+{
+    "userid":"63ec84f4ab9be5b8a8cb1ed3",
+    "hashwallet":"200",
+    "wallet_type": "Cash"
+}
+
+
+###GET NMANA
+###Get Users
+GET http://localhost:8080/users
+
+###Get Transactions
+GET http://localhost:8080/transactions
+
+###Get Wallets
+GET http://localhost:8080/wallets
